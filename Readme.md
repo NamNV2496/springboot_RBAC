@@ -25,3 +25,6 @@ curl --location --request GET 'http://localhost:8080/getSecure' \
 
 ```
 
+# Way 2 use AOP
+
+https://github.com/NamNV2496/Annotation
