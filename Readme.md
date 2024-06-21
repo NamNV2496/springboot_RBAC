@@ -12,7 +12,7 @@ we need parse token and save username and role to securityContextHolder
 SecurityContextHolder.getContext().setAuthentication(authentication);
 ```
 
-@PreAuthorize("hasAuthority('admin')") will access and get role to compare automatically
+`@PreAuthorize("hasAuthority('admin')")` or `@PreAuthorize("hasAuthority('admin') || hasAuthority('user')")` will access and get role to compare automatically
 
 ```textmate
 Role does not access

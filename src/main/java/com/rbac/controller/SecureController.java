@@ -14,6 +14,13 @@ public class SecureController {
         return "getSecure";
     }
 
+    @GetMapping("/all")
+    @PreAuthorize("hasAuthority('admin') || hasAuthority('user')")
+    public String getAll() {
+        System.out.println("getAll");
+        return "getAll";
+    }
+
     @GetMapping("/getSecureUser")
     @PreAuthorize("hasAuthority('user')")
     public String getSecureUser() {
